@@ -49,3 +49,25 @@ print_full_name 'Peter', 'Parker'
 total = 0
 [1, 2, 3].each { |number| total += number}
 puts "The total is: #{total}"
+
+
+#It's the same thing that the next line does:
+#total = 0
+#[1, 2, 3].each do |number|
+#  total += number
+#end
+#puts total # 6
+#
+
+# TYPES OF VARIABLES
+# Constant
+MY_CONTANT = 'I am avaible throughout your app.'
+# Global variables
+$var = 'I am avaible throughout your app.' #Global variable. These variables are available throughout your entire app, overriding all scope boundaries. Rubyists tend to stay away from global variables as there can be unexpected complications when using them.
+
+#Class variables
+#These variables are accessible by instances of your class, as well as the class itself.
+#When you need to declare a variable that is related to a class, but each instance of that class does not need its own value for this variable,
+#you use a class variable. Class variables must be initialized at the class level, outside of any method definitions.
+#They can then be altered using class or instance method definitions.
+@@instances = 0
